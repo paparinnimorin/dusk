@@ -4,7 +4,7 @@ date: 2025-01-19
 categories: 
   - "生成ai"
 coverImage: "0066bbfc3fa720ef842e9df4de68b92fdcc3b1f9b6b74366edc1f28138e8cd69.png"
-draft: true
+draft: false
 ---
 
 こんにちは！今日は、開発者の間で急速に注目を集めているAI搭載コードエディタ「Cursor」について、その革新的な機能と実践的な活用方法をご紹介します。

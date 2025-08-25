@@ -4,7 +4,7 @@ date: 2025-01-19
 categories: 
   - "生成ai"
 coverImage: "9e2406f25e0da4918986069b8a565941d74af2a69a6a09a157da832bc4cd03d5.png"
-draft: true
+draft: false
 ---
 
 ## MCPの基本概念と説明

@@ -4,7 +4,7 @@ date: 2025-05-10
 categories: 
   - "今週の調べごと"
 coverImage: "1-2.png"
-draft: true
+draft: false
 ---
 
 ## 拍動する未来を、わたしたちの目の前に。

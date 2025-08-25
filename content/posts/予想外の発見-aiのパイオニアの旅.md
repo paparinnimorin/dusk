@@ -4,7 +4,7 @@ date: 2024-08-31
 categories: 
   - "ものがたり"
 coverImage: "1-2.jpeg"
-draft: true
+draft: false
 ---
 
 ## 第1章: 期待と現実

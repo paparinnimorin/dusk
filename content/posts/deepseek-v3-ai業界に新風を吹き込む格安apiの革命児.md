@@ -4,7 +4,7 @@ date: 2025-01-19
 categories: 
   - "生成ai"
 coverImage: "914638856675a3caf3f35b2bc5bfcd6a3a1806dd332dadb76a219f56d2bd5bc9.png"
-draft: true
+draft: false
 ---
 
 「えっ、こんなに安いの！？」

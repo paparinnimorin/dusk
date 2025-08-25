@@ -1,6 +1,6 @@
 ---
 title: "分類と回帰の探求"
-draft: true
+draft: false
 ---
 
  機械学習の基本：分類と回帰
