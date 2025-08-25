@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/dusk/livereload.js?mindelay=10&amp;v=2&amp;port=51887&amp;path=dusk/livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>DeepSeek V3: AI業界に新風を吹き込む格安APIの革命児 | Dusk&#39;s Gentle Reading Nook</title>
+<meta name="keywords" content="">
+<meta name="description" content="「えっ、こんなに安いの！？」
+ある日、私のSlackに届いた同僚からのメッセージです。添付されたリンクをクリックすると、そこにはDeepSeek V3の衝撃的な価格設定が。これが、私がDeepSeek V3について深く調べ始めるきっかけとなりました。
+革新的な技術の全貌
+DeepSeek V3の核となる技術的特徴をまとめると：
+▼モデルアーキテクチャ ・総パラメータ数：671B ・実効パラメータ数：37B（トークンごとに活性化） ・トレーニングデータ：14.8兆トークン ・独自の負荷分散システム ・革新的なマルチトークン予測機能
+▼ベンチマークパフォーマンス ・GPT-4oと同等以上の性能を実現 ・オープンソースモデルの中で最高性能 ・特に長文生成タスクでの優位性
+開発者フレンドリーなAPI設計
+「導入は難しそう&hellip;」
+そんな心配は無用です。DeepSeek V3は開発者の使いやすさを重視し：
+▼API特徴 ・OpenAI互換フォーマット採用 ・既存のOpenAI SDKとの完全な互換性 ・わずか数行のコード変更で移行可能 ・詳細なドキュメント提供
+これらの特徴により、既存のAIプロジェクトからの移行もスムーズに行えます。
+今後の展望
+DeepSeek V3の登場は、AI業界に新たなパラダイムシフトをもたらす可能性を秘めています。特に：
+▼期待される影響 ・スタートアップのAI導入障壁低下 ・新しいAIユースケースの創出 ・AI技術の更なる民主化 ・オープンソースAIの発展促進
+「結局、使ってみる価値はあるの？」
+その答えは明確です。高性能、低コスト、そして使いやすさを兼ね備えたDeepSeek V3は、確実に検討に値する選択肢と言えるでしょう。
+【追記】 この記事の情報は2024年4月時点のものです。APIの価格設定や機能は随時更新される可能性がありますので、最新の情報は公式ドキュメントをご確認ください。
+また、本記事で紹介した性能比較やベンチマーク結果は、公開されている情報に基づいています。実際の使用環境やユースケースによって結果が異なる可能性があることをご了承ください。">
+<meta name="author" content="Dusk">
+<link rel="canonical" href="http://localhost:51887/dusk/posts/posts/_drafts/deepseek-v3-ai%E6%A5%AD%E7%95%8C%E3%81%AB%E6%96%B0%E9%A2%A8%E3%82%92%E5%90%B9%E3%81%8D%E8%BE%BC%E3%82%80%E6%A0%BC%E5%AE%89api%E3%81%AE%E9%9D%A9%E5%91%BD%E5%85%90/">
+<link crossorigin="anonymous" href="/dusk/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:51887/dusk/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:51887/dusk/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:51887/dusk/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:51887/dusk/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:51887/dusk/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:51887/dusk/posts/posts/_drafts/deepseek-v3-ai%E6%A5%AD%E7%95%8C%E3%81%AB%E6%96%B0%E9%A2%A8%E3%82%92%E5%90%B9%E3%81%8D%E8%BE%BC%E3%82%80%E6%A0%BC%E5%AE%89api%E3%81%AE%E9%9D%A9%E5%91%BD%E5%85%90/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:51887/dusk/" accesskey="h" title="Dusk&#39;s Gentle Reading Nook (Alt + H)">Dusk&#39;s Gentle Reading Nook</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      DeepSeek V3: AI業界に新風を吹き込む格安APIの革命児
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h1>
+    <div class="post-meta"><span title='2025-01-19 00:00:00 +0000 UTC'>January 19, 2025</span>&nbsp;·&nbsp;Dusk
+
+</div>
+  </header> 
+  <div class="post-content"><p>「えっ、こんなに安いの！？」</p>
+<p>ある日、私のSlackに届いた同僚からのメッセージです。添付されたリンクをクリックすると、そこにはDeepSeek V3の衝撃的な価格設定が。これが、私がDeepSeek V3について深く調べ始めるきっかけとなりました。</p>
+<h2 id="革新的な技術の全貌">革新的な技術の全貌<a hidden class="anchor" aria-hidden="true" href="#革新的な技術の全貌">#</a></h2>
+<p>DeepSeek V3の核となる技術的特徴をまとめると：</p>
+<p>▼モデルアーキテクチャ ・総パラメータ数：671B ・実効パラメータ数：37B（トークンごとに活性化） ・トレーニングデータ：14.8兆トークン ・独自の負荷分散システム ・革新的なマルチトークン予測機能</p>
+<p>▼ベンチマークパフォーマンス ・GPT-4oと同等以上の性能を実現 ・オープンソースモデルの中で最高性能 ・特に長文生成タスクでの優位性</p>
+<h2 id="開発者フレンドリーなapi設計">開発者フレンドリーなAPI設計<a hidden class="anchor" aria-hidden="true" href="#開発者フレンドリーなapi設計">#</a></h2>
+<p>「導入は難しそう&hellip;」</p>
+<p>そんな心配は無用です。DeepSeek V3は開発者の使いやすさを重視し：</p>
+<p>▼API特徴 ・OpenAI互換フォーマット採用 ・既存のOpenAI SDKとの完全な互換性 ・わずか数行のコード変更で移行可能 ・詳細なドキュメント提供</p>
+<p>これらの特徴により、既存のAIプロジェクトからの移行もスムーズに行えます。</p>
+<h2 id="今後の展望">今後の展望<a hidden class="anchor" aria-hidden="true" href="#今後の展望">#</a></h2>
+<p>DeepSeek V3の登場は、AI業界に新たなパラダイムシフトをもたらす可能性を秘めています。特に：</p>
+<p>▼期待される影響 ・スタートアップのAI導入障壁低下 ・新しいAIユースケースの創出 ・AI技術の更なる民主化 ・オープンソースAIの発展促進</p>
+<p>「結局、使ってみる価値はあるの？」</p>
+<p>その答えは明確です。高性能、低コスト、そして使いやすさを兼ね備えたDeepSeek V3は、確実に検討に値する選択肢と言えるでしょう。</p>
+<p>【追記】 この記事の情報は2024年4月時点のものです。APIの価格設定や機能は随時更新される可能性がありますので、最新の情報は公式ドキュメントをご確認ください。</p>
+<p>また、本記事で紹介した性能比較やベンチマーク結果は、公開されている情報に基づいています。実際の使用環境やユースケースによって結果が異なる可能性があることをご了承ください。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:51887/dusk/">Dusk&#39;s Gentle Reading Nook</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

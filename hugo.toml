@@ -1,3 +1,28 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://paparinnimorin.github.io/dusk/"
+languageCode = "ja"
+title = "Dusk's Gentle Reading Nook"
+theme = "PaperMod"
+
+[params]
+  author = "Dusk"
+  description = "技術記事と物語を綴る静かな読書の隅"
+  
+  # 日本語フォント対応
+  [params.assets]
+    disableFingerprinting = true
+  
+  # SNSシェアボタン不要なら
+  ShowShareButtons = false
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true  # コード記事用にコピーボタン表示
+  
+  # ホームページの設定
+  [params.homeInfoParams]
+    Title = "Welcome to Dusk's Reading Nook"
+    Content = "技術的な探求と物語の世界が交差する場所"
+
+  # メニュー設定（必要なら）
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/paparinnimorin"
